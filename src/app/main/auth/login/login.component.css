@@ -1,0 +1,107 @@
+/* =================================================================== 
+ *
+ *  Travesys v1.0 Login Stylesheet
+ *  16-09-2018
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *  01. webfonts and iconfonts
+
+ *
+ * =================================================================== */
+
+ .login {
+    width: 100%;
+    margin: 0 auto;
+}
+.login .main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .wrap-login{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.login .wrap-login .login-form {
+    width: 500px;
+    min-height: 100vh;
+    display: block;
+    background-color: #fff;
+    display: table;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.2);
+}
+.login .wrap-login .login-form .form-v-middle {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 2.5rem;
+}
+.login .wrap-login .login-form .logo{
+    display: block;
+    max-width: 180px;
+    margin-bottom: 25px;
+}
+.login .wrap-login .login-form .d-flex.justify-content-around > div {
+    width: 50%;
+}
+.login .wrap-login .bg-image {
+    width: calc(100% - 500px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.login .wrap-login .bg-image .overlay {
+    background:#ff3d00a1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Starting Responsive CSS */
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+   
+}
+
+@media only screen and (max-width: 767px) {
+    .login .wrap-login{
+        background-image: url(../../../../assets/img/login-bg.jpg);
+    }
+    .login .wrap-login .login-form{
+        background-color: #ff3d00a1;
+    }
+    .login .wrap-login .login-form .form-v-middle {                
+        padding: 0 1.5rem;
+    }
+    .login .wrap-login .login-form .form-v-middle .content {
+        background: #fff;
+        padding: 1.5rem; 
+        border-radius:5px; 
+    }
+}

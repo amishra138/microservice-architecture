@@ -1,0 +1,104 @@
+/* Side Nav */
+
+.side-nav ul.collapsible .collapsible-header .lnr {
+    width: 30px;
+    display: inline-block;
+}
+
+.mouseleaveNow.side-nav ul.collapsible .collapsible-header .menu-text {
+    display: none;
+}
+
+.mouseleaveNow.larger.side-nav ul.collapsible .collapsible-header {
+    text-align: left;
+}
+
+.mouseleaveNow.larger.side-nav ul .collapsible-header .menu-text {
+    display: inline-block;
+}
+
+.side-nav .logo-wrapper,
+.side-nav .logo-wrapper a {
+    height: 90px;
+    width: 16rem;
+}
+
+.side-nav .logo-wrapper img {
+    padding: 20px 50px;
+}
+
+.side-nav .collapsible {
+    margin: 0;
+}
+
+.side-nav li.side-menu-list,
+.mouseleaveNow.larger.side-nav li.side-menu-list {
+    position: relative;
+    height: calc(100vh - 90px - 143px);
+    overflow-y: auto;
+}
+
+.mouseleaveNow.side-nav li.side-menu-list {
+    height: calc(100vh - 90px - 93px);
+}
+
+.side-nav ul.nav-footer-top.collapsible {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    padding: 6px 0;
+    border-top: 1px solid #f0f3fd;
+}
+
+.side-nav ul.nav-footer-top.collapsible a {
+    line-height: 40px;
+    height: 40px;
+}
+
+.mouseleaveNow.side-nav ul.nav-footer-top.collapsible {
+    bottom: 0;
+}
+
+.mouseleaveNow.larger.side-nav ul.nav-footer-top.collapsible {
+    bottom: 50px;
+}
+
+ul.nav-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f1f2f5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mouseleaveNow ul.nav-footer {
+    display: none;
+}
+
+.mouseleaveNow.larger ul.nav-footer {
+    display: flex;
+}
+
+ul.nav-footer li a {
+    font-size: 0.8rem;
+    color: #333;
+    padding: 0 10px;
+    line-height: 50px;
+    height: 50px;
+}
+
+table td, table th {
+    font-size:inherit;
+    font-weight: normal;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 0;
+}

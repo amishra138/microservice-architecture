@@ -1,0 +1,22 @@
+.radial-progress-inner {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
+.fixed.custom-scrollbar.side-nav{
+    width: 16rem
+}

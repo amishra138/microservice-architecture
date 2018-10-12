@@ -1,0 +1,305 @@
+<!--Double navigation-->
+<header>
+  <!-- Sidebar navigation -->
+  <mdb-side-nav #sidenav class="fixed" [fixed]="true" id="slide-out" class="fixed custom-scrollbar" style="width: 16rem">
+    <!-- Logo -->
+    <mdb-navbar-brand>
+      <li>
+        <div class="logo-wrapper waves-light">
+          <div class="logo-wrapper-inner">
+            <a href="?page=dashboard">
+              <img src="assets/img/logo/Travesys-Logo-RGB.png" id="logoId" class="img-fluid flex-center" />
+            </a>
+          </div>
+        </div>
+      </li>
+    </mdb-navbar-brand>
+    <!--/. Logo -->
+
+    <!-- Side navigation links -->
+    <links>
+      <li class="side-menu-list">
+        <ul class="collapsible collapsible-accordion menuMainClass">
+          <li>
+            <a href="?page=dashboard" class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-home"></i> <span class="menu-text">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="?page=instanceManagement" class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-exit"></i> <span class="menu-text">Instance Management</span>
+            </a>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-user"></i> <span class="menu-text">Admin Management <i class="fa fa-angle-down rotate-icon"></i></span>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="?page=adminUsers" class="waves-effect">Admin User List</a>
+                </li>
+                <li>
+                  <a href="?page=role" class="waves-effect">Admin Roles</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-cog"></i> <span class="menu-text">Content Management <i class="fa fa-angle-down rotate-icon"></i></span>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="?page=themeManagement" class="waves-effect">Theme Management</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-briefcase"></i> <span class="menu-text">Package Management <i class="fa fa-angle-down rotate-icon"></i></span>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="?page=packageManagement" class="waves-effect">Package</a>
+                </li>
+                <li>
+                  <a href="?page=packageAdd" class="waves-effect">Add Package</a>
+                </li>
+                <li>
+                  <a href="?page=packageEdit" class="waves-effect">Edit Package</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-bullhorn"></i> <span class="menu-text">Campaign Management<i class="fa fa-angle-down rotate-icon"></i></span>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="?page=campaignManagement" class="waves-effect">Campaign</a>
+                </li>
+                <li>
+                  <a href="?page=campaignDetail" class="waves-effect">Add Campaign</a>
+                </li>
+
+                <li>
+                  <a href="?page=campaignDetailEdit" class="waves-effect">Edit Campaign</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-map-marker"></i> <span class="menu-text">Destination Management <i class="fa fa-angle-down rotate-icon"></i></span>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="?page=destinationManagement" class="waves-effect">Destination</a>
+                </li>
+                <li>
+                  <a href="?page=destinationDetail" class="waves-effect">Add Destination</a>
+                </li>
+                <li>
+                  <a href="?page=destinationDetailEdit" class="waves-effect">Edit Destination</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-layers"></i> <span class="menu-text">Airline Management <i class="fa fa-angle-down rotate-icon"></i></span>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="?page=destinationManagement" class="waves-effect">Airline</a>
+                </li>
+                <li>
+                  <a href="?page=destinationDetail" class="waves-effect">Add Airline</a>
+                </li>
+                <li>
+                  <a href="?page=destinationDetailEdit" class="waves-effect">Edit Airline</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-flag"></i> <span class="menu-text">Airport Management <i class="fa fa-angle-down rotate-icon"></i></span>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="?page=destinationManagement" class="waves-effect">Airport</a>
+                </li>
+                <li>
+                  <a href="?page=destinationDetail" class="waves-effect">Add Airport</a>
+                </li>
+                <li>
+                  <a href="?page=destinationDetailEdit" class="waves-effect">Edit Airport</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-bookmark"></i> <span class="menu-text">Markup Management <i class="fa fa-angle-down rotate-icon"></i></span>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="?page=markup" class="waves-effect">Dashboard</a>
+                </li>
+                <li>
+                  <a href="?page=markupListing" class="waves-effect">Markup Listing</a>
+                </li>
+
+                <li>
+                  <a href="?page=addMarkup" class="waves-effect">Add Markup</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-bookmark"></i> <span class="menu-text">Product Management <i class="fa fa-angle-down rotate-icon"></i></span>
+            </a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="?page=productManagement" class="waves-effect">Product Management</a>
+                </li>
+                <li>
+                  <a href="?page=productAdd" class="waves-effect">Add Product</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="?page=markup" class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-gift"></i> <span class="menu-text">Discount Manegement</span>
+            </a>
+          </li>
+          <li>
+            <a href="?page=markup" class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-tag"></i> <span class="menu-text">Coupon Manegement</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="collapsible collapsible-accordion nav-footer-top">
+          <li>
+            <a href="#" class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-question-circle"></i> <span class="menu-text">Help & FAQ</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="collapsible-header waves-effect arrow-r">
+              <i class="lnr lnr-phone-handset"></i> <span class="menu-text">Support</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="collapsible collapsible-accordion menuMainClass">
+          <mdb-accordion [multiple]="false" aria-multiselectable="false">
+
+            <!-- Collapsible link -->
+            <mdb-accordion-item>
+              <mdb-accordion-item-head mdbWavesEffect><i class="fa fa-chevron-right"></i> Camapigns</mdb-accordion-item-head>
+              <mdb-accordion-item-body>
+                <ul>
+                  <li><a uiSref="app.campaigns" class="waves-effect" mdbWavesEffect>List Campaigns</a></li>
+                  <li><a href="#" class="waves-effect" mdbWavesEffect>Add Campaign</a></li>
+                </ul>
+              </mdb-accordion-item-body>
+            </mdb-accordion-item>
+
+            <!-- Simple link -->
+            <mdb-accordion-item class="no-collase">
+              <mdb-accordion-item-head mdbWavesEffect><i class="fa fa-hand-pointer-o"></i> Simple link</mdb-accordion-item-head>
+              <mdb-accordion-item-body></mdb-accordion-item-body>
+            </mdb-accordion-item>
+
+            <!-- Collapsible link -->
+            <mdb-accordion-item>
+              <mdb-accordion-item-head mdbWavesEffect><i class="fa fa-eye"></i> Collapsible menu 2</mdb-accordion-item-head>
+              <mdb-accordion-item-body>
+                <ul>
+                  <li><a href="#" class="waves-effect" mdbWavesEffect>Link 1</a></li>
+                  <li><a href="#" class="waves-effect" mdbWavesEffect>Link 2</a></li>
+                </ul>
+              </mdb-accordion-item-body>
+            </mdb-accordion-item>
+
+            <!-- Simple link -->
+            <mdb-accordion-item class="no-collase">
+              <mdb-accordion-item-head mdbWavesEffect><i class="fa fa-diamond"></i> Simple link 2</mdb-accordion-item-head>
+              <mdb-accordion-item-body></mdb-accordion-item-body>
+            </mdb-accordion-item>
+
+          </mdb-accordion>
+        </ul>
+        <ul class="nav-footer">
+          <li><a href="#">User Terms</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </li>
+    </links>
+
+    <!--/. Side navigation links -->
+    <div class="sidenav-bg mask-strong"></div>
+  </mdb-side-nav>
+  <!--/. Sidebar navigation -->
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+    <!-- SideNav slide-out button -->
+    <div class="float-left">
+      <a (click)="sidenav.toggle()" class="button-collapse float-left" data-toggle="tooltip" data-placement="top" title="Side Menu">
+        <i class="lnr lnr-menu"></i>
+      </a>
+      <a class="topbarIcons float-left" data-toggle="tooltip" data-placement="top" title="Refresh">
+        <i class="lnr lnr-sync"></i>
+      </a>
+      <a class="topbarIcons float-left" data-toggle="tooltip" data-placement="top" title="Close">
+        <i class="lnr lnr-cross"></i>
+      </a>
+      <span class="float-left ml-3  ">
+        <!-- Search form -->
+        <form class="form-inline ">
+          <input class="form-control form-control-sm" type="text" placeholder="Search" aria-label="Search">
+        </form>
+      </span>
+    </div>
+    <!-- Breadcrumb-->
+    <div class="breadcrumb-dn mr-auto" style="display: none;">
+      <p>Material Design for Bootstrap</p>
+    </div>
+    <ul class="nav navbar-nav nav-flex-icons ml-auto">
+      <li class="nav-item" style="display: none;">
+        <a class="nav-link">
+          <i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" mdbDropdown>
+        <a mdbDropdownToggle class="nav-link dropdown-toggle profileNameMain" id="navbarDropdownMenuLink" data-toggle="dropdown"
+        *ngIf="user != null"
+          aria-haspopup="true" aria-expanded="false">
+          <span class="d-inline-block profileImgMain">
+            <div class="profileImg">{{user.firstName.charAt(0).toUpperCase()}}{{user.lastName.charAt(0).toUpperCase()}}</div>
+          </span>{{user.firstName}} {{user.lastName}}
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" (click)="logout()">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.Navbar -->
+</header>
+<!--/.Double navigation-->

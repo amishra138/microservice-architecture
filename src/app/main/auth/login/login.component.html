@@ -1,0 +1,55 @@
+<div class="login">
+    <div class="main-container">
+        <div class="wrap-login">
+            <!-- login-form -->
+            <div class="login-form ">
+                <div class="form-v-middle">
+                    <div class="content">
+                        <div class="logo">
+                            <img src="../../../../assets/img/logo/logo.svg" alt="Travesys" width="180">
+                        </div>
+                        <!-- <h2>Welcome to Travesys</h2> -->
+                        <form class="needs-validation" novalidate name="form" #form="ngForm" (submit)="form.valid && doLogin()">
+                            <div class="notification" *ngIf="loggedIn">
+                                <div class="alert alert-success" role="alert">
+                                    You've successfully logged in.
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="md-form">
+                                <input mdbInputDirective type="email" class="form-control" data-error="Please enter a valid username/email." [validateSuccess]="false" required name="email" [(ngModel)]="model.email" #email="ngModel">
+                                <label for="form1" class="">Username or Email address</label>
+                            </div>
+                            <!-- Password -->
+                            <div class="md-form">
+                                <input mdbInputDirective type="password" data-error="Please enter your password." class="form-control" [validateSuccess]="false" required name="password" [(ngModel)]="model.password" #password="ngModel">
+                                <label for="form1" class="">Password</label>
+                                
+                            </div>
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <!-- Remember me -->
+                                    <!-- <mdb-checkbox [checked]="rememberMe">Remember me</mdb-checkbox> -->
+
+                                    <mdb-checkbox [checked]="rememberMe">Remember me</mdb-checkbox>
+
+                                </div>
+                                <div class="text-right">
+                                    <!-- Forgot password -->
+                                    <a href="?page=forgotPassword">Forgot password?</a>
+                                </div>
+                            </div>
+                            <!-- Sign in button -->
+                            <button class="btn btn-primary btn-lg w-100 m-0 mt-4" type="submit">Sign in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /login-form -->
+            <div class="bg-image" style="background-image: url('../../../../assets/img/login-bg.jpg')">
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+</div>

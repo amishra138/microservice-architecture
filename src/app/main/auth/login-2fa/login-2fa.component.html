@@ -1,0 +1,36 @@
+<div class="login">
+    <div class="main-container">
+        <div class="wrap-login">
+            <!-- login-form -->
+            <div class="login-form ">
+                <div class="form-v-middle">
+                    <div class="content">
+                        <div class="logo">
+                            <img src="../../../../assets/img/logo/logo.svg" alt="Travesys" width="180">
+                        </div>
+                        <!-- <h2>Welcome to Travesys</h2> -->
+                        <form class="needs-validation" novalidate name="form" #form="ngForm" (submit)="form.valid && verify2fa()">
+                            <div class="notification" *ngIf="loggedIn">
+                                <div class="alert alert-success" role="alert">
+                                    You've successfully logged in.
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            <div class="md-form">
+                                <input mdbInputDirective type="text" class="form-control" data-error="Please enter 2 factor login code"
+                                    [validateSuccess]="false" required name="2facode" [(ngModel)]="code" #2facode="ngModel">
+                                <label for="form1" class="">2 factor code</label>
+                            </div>
+                            <!-- Sign in button -->
+                            <button class="btn btn-primary btn-lg w-100 m-0 mt-4" type="submit">Sign in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /login-form -->
+            <div class="bg-image" style="background-image: url('../../../../assets/img/login-bg.jpg')">
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+</div>
